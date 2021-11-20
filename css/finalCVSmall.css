@@ -1,0 +1,131 @@
+@media screen and (max-width: 600px) {
+    .contentAll {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    .titleProfessionalExp {
+        width: 98%;
+        background-color: #12609E;
+        display: flex;
+        align-items: center;
+        border-radius: 5px 5px 0px 0px;
+        height: 4.5%;
+        padding: 1%;
+        margin-top: 10px;
+    }
+    .contentScroll {
+        display: flex;
+        flex-flow: column;
+        height: 400px;
+        border-radius: 0px 0px 5px 5px;
+        margin-bottom: 3%;
+        padding: 2%;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(168, 163, 163, 0.884);
+    }
+    .leftBigOne {
+        width: 100%;
+        margin-right: 2%;
+    }
+    .rigthBigOne {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .simpleText {
+        font-size: large;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .simpleBlackText {
+        font-size: medium;
+        color: rgb(32, 30, 30);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .mediumBlackText {
+        font-size: x-small;
+        color: rgb(32, 30, 30);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0.5%;
+    }
+    .simpleBlueText {
+        font-size: medium;
+        color: rgb(105, 118, 238);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .titleText {
+        font-size: x-large;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .mediumBlackText {
+        font-size: medium;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0.5%;
+    }
+    .simpleGreyText {
+        font-size: small;
+        color: rgb(91, 92, 94);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .smallStar {
+        width: 40%;
+        height: 40%;
+    }
+    .bigGreyText {
+        font-size: large;
+        color: rgb(91, 92, 94);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5%;
+    }
+    .searchBar {
+        background-color: rgb(250, 248, 250);
+        width: 95%;
+        height: 25%;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .profilePhoto {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    .personnalInfo {
+        margin-top: 0px;
+        display: flex;
+        margin-left: 30px;
+        flex-flow: row;
+        align-items: center;
+    }
+    .sentIcon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin: auto;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .circleButton {
+        background-color: tomato;
+        border-style: none;
+        border-radius: 100%;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 10px rgba(101, 101, 105, 0.555);
+        margin-top: -5%;
+        top: -50px;
+        right: 50px;
+    }
+}
