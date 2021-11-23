@@ -219,14 +219,20 @@
 
 .oldProject {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: #12609E;
     width: 90%;
     height: 100px;
     border-style: none;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.detailOldProjet {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .contentSlideBar {
@@ -236,7 +242,7 @@
 }
 
 .redBar {
-    width: 100%;
+    width: 33%;
     height: 5px;
     background-color: #E34756;
 }
