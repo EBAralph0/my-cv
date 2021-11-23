@@ -54,7 +54,10 @@
                         <div style="margin-left: 20px; width:100%;">
                             <div class="simpleText">Resident à Logbessou </div>
                             <div class="simpleText">DOUALA - Cameroun</div>
-                            <div class="simpleText">Map : 4.87544 6.85744</div>
+                            <div class="oneLineText">
+                                <div class="simpleText">Map :</div>
+                                <div class="thinText"> 4.87544 6.85744</div>
+                            </div>
                             <div class="bottomLine"></div>
                         </div>
                     </div>
@@ -63,7 +66,7 @@
                         <img src="image/phone_24px.png" alt="" class="bigIcon">
                         <div style="margin-left: 20px; width:100%;">
                             <div class="simpleText">(+237) 694 833 360</div>
-                            <div class="simpleText">Mobile, Telegram, Whatsapp</div>
+                            <div class="thinText">Mobile, Telegram, Whatsapp</div>
                             <div class="bottomLine"></div>
                         </div>
                     </div>
@@ -71,7 +74,7 @@
                         <img src="image/filled_message_24px.png" alt="" class="bigIcon">
                         <div style="margin-left: 20px; width:100%;">
                             <div class="simpleText">edracresurek@gmail.com </div>
-                            <div class="simpleText">Google, Twitter, Linkedin, Github</div>
+                            <div class="thinText">Google, Twitter, Linkedin, Github</div>
                         </div>
                     </div>
 
@@ -113,6 +116,7 @@
                             <img src="image/star_24px.png" alt="" class="smallStar">
                         </div>
                     </div>
+
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
                         <i class="fas fa-check-square fa-2x" id="myCheck"></i>
