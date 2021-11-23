@@ -77,249 +77,252 @@
                             <div class="thinText">Google, Twitter, Linkedin, Github</div>
                         </div>
                     </div>
-
-                    <div class="oldProject" id="oldProject">
-                        <div class="simpleText">+10 projets </div>
-                        <div class="simpleText">+02 contrats</div>
-                        <div class="simpleText">+02 ans d'Exp</div>
-                    </div>
-
                 </div>
-                <div class="detailProject" id="detailProject">
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 90%;"></span>
-                                <span class="theEmpty" style="right: 10%;"></span>
+                <div class="oldProject" id="oldProject">
+                    <div class="detailOldProjet">
+                        <div class="contentSlideBar">
+                            <div class="simpleText" style=" margin-bottom: 10px;">+10 projets </div>
+                        </div>
+                        <div class="thinText " style="margin-bottom: 10px; ">+02 contrats</div>
+                        <div class="thinText " style="margin-bottom: 10px; ">+02 ans d'Exp</div>
+                    </div>
+                    <div class="redBar "></div>
+                </div>
+                <div class="detailProject " id="detailProject ">
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 90%; "></span>
+                                <span class="theEmpty " style="right: 10%; "></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar ">
                         </div>
                     </div>
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 75%;"></span>
-                                <span class="theEmpty" style="right: 25%;"></span>
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 75%; "></span>
+                                <span class="theEmpty " style="right: 25%; "></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar ">
                         </div>
                     </div>
 
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 80%;"></span>
-                                <span class="theEmpty" style="right: 20%;"></span>
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 80%; "></span>
+                                <span class="theEmpty " style="right: 20%; "></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar ">
                         </div>
                     </div>
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 60%;"></span>
-                                <span class="theEmpty" style="right: 40%;"></span>
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 60%; "></span>
+                                <span class="theEmpty " style="right: 40%; "></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar ">
                         </div>
                     </div>
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 95%;"></span>
-                                <span class="theEmpty" style="right: 5%;"></span>
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 95%;"></span>
+                                <span class="theEmpty " style="right: 5%;"></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar">
                         </div>
                     </div>
-                    <div class="checked" id="checked">
-                        <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
-                        <div class="properlyProject">
-                            <div class="mediumBlackText"><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer">
-                                <span class="theFulled" style="width: 85%;"></span>
-                                <span class="theEmpty" style="right: 15%;"></span>
+                    <div class="checked " id="checked ">
+                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                        <div class="properlyProject ">
+                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                            <div class="slidecontainer ">
+                                <span class="theFulled " style="width: 85%;"></span>
+                                <span class="theEmpty " style="right: 15%;"></span>
                             </div>
                         </div>
-                        <div>
-                            <img src="image/star_24px.png" alt="" class="smallStar">
+                        <div class="contentStar">
+                            <img src="image/star_24px.png " alt=" " class="smallStar ">
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="rigthBigOne" id="rigthBigOne">
-            <div class="titleProfessionalExp" id="titleProfessionalExp">
-                <div class="titleBar">
-                    <div class="imageText">
-                        <img src="image/real_estate_80px.png" alt="" class="geantIcon">
+        <div class="rigthBigOne " id="rigthBigOne ">
+            <div class="titleProfessionalExp " id="titleProfessionalExp ">
+                <div class="titleBar ">
+                    <div class="imageText ">
+                        <img src="image/real_estate_80px.png " alt=" " class="geantIcon ">
                         <div>
-                            <div class="titleText">Expérience Professionnelle</div>
-                            <div class="smallWhiteText"> <i>Expertise en entreprise</i></div>
+                            <div class="titleText ">Expérience Professionnelle</div>
+                            <div class="smallWhiteText "> <i>Expertise en entreprise</i></div>
                         </div>
                     </div>
-                    <img src="image/menu_2_24px.png" alt="" class="treeDots">
+                    <img src="image/menu_2_24px.png " alt=" " class="treeDots ">
 
                 </div>
             </div>
-            <div class="contentScroll">
-                <div class="scrollOne">
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
-                        <div class="simpleBlueText">De juillet 2019 à ce jour - http://mdem.cm</div>
-                        <div class="simpleGreyText">Chef du projet annuaire-universel.cm de l'ART</div>
-                        <div class="greyBottomLine"></div>
+            <div class="contentScroll ">
+                <div class="scrollOne ">
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
+                        <div class="simpleBlueText ">De juillet 2019 à ce jour - http://mdem.cm</div>
+                        <div class="simpleGreyText ">Chef du projet annuaire-universel.cm de l'ART</div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
-                        <div class="simpleBlueText">De juillet 2019 à ce jour - http://mdem.cm</div>
-                        <div class="simpleGreyText">Chef du projet annuaire-universel.cm de l'ART</div>
-                        <div class="greyBottomLine"></div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
+                        <div class="simpleBlueText ">De juillet 2019 à ce jour - http://mdem.cm</div>
+                        <div class="simpleGreyText ">Chef du projet annuaire-universel.cm de l'ART</div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
-                        <div class="simpleBlueText">De juillet 2019 à ce jour - http://mdem.cm</div>
-                        <div class="simpleGreyText">Chef du projet annuaire-universel.cm de l'ART</div>
-                        <div class="greyBottomLine"></div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
+                        <div class="simpleBlueText ">De juillet 2019 à ce jour - http://mdem.cm</div>
+                        <div class="simpleGreyText ">Chef du projet annuaire-universel.cm de l'ART</div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
-                        <div class="simpleBlueText">De juillet 2019 à ce jour - http://mdem.cm</div>
-                        <div class="simpleGreyText">Chef du projet annuaire-universel.cm de l'ART</div>
-                        <div class="greyBottomLine"></div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
+                        <div class="simpleBlueText ">De juillet 2019 à ce jour - http://mdem.cm</div>
+                        <div class="simpleGreyText ">Chef du projet annuaire-universel.cm de l'ART</div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
-                        <div class="simpleBlueText">De juillet 2019 à ce jour - http://mdem.cm</div>
-                        <div class="simpleGreyText">Chef du projet annuaire-universel.cm de l'ART</div>
-                        <div class="greyBottomLine"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="doubleDiv" id="doubleDiv">
-                <div class="interestPoint" id="interestPoint">
-                    <div class="mediumBlackText"><b>Point d'interêt</b></div>
-                    <div class="simpleGreyText" style="padding-bottom: 1%;">Simple passe-temps pour se faire un peu plaisir</div>
-                    <div class="listeImageInteret">
-                        <img src="image/tango_48px.png" alt="" class="pleasureImage">
-                        <img src="image/tv_show_100px.png" alt="" class="pleasureImage">
-                        <img src="image/football2_64px.png" alt="" class="pleasureImage">
-                        <img src="image/nintendo_switch_48px.png" alt="" class="pleasureImage">
-                        <img src="image/nintendo_gamecube__100px.png" alt="" class="pleasureImage">
-                        <img src="image/tango_48px.png" alt="" class="pleasureImage">
-                        <img src="image/tv_show_100px.png" alt="" class="pleasureImage">
-                        <img src="image/football2_64px.png" alt="" class="pleasureImage">
-                        <img src="image/nintendo_switch_48px.png" alt="" class="pleasureImage">
-                        <img src="image/nintendo_gamecube__100px.png" alt="" class="pleasureImage">
-                    </div>
-                </div>
-                <div class="language" id="language">
-                    <div class="mediumBlackText"><b>Langue</b></div>
-                    <div class="simpleGreyText" style="padding-bottom: 1%;">Pratiquée en entreprise</div>
-                    <div class="checkLanguage">
-                        <img src="image/checked_checkbox_24px.png" alt="">
-                        <div class="bigGreyText">Francais</div>
-                    </div>
-                    <div class="checkLanguage">
-                        <img src="image/checked_checkbox_24px.png" alt="">
-                        <div class="bigGreyText">Anglais</div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">Chef des projets technologiques - <b> @Ets. M DE M</b></div>
+                        <div class="simpleBlueText ">De juillet 2019 à ce jour - http://mdem.cm</div>
+                        <div class="simpleGreyText ">Chef du projet annuaire-universel.cm de l'ART</div>
+                        <div class="greyBottomLine "></div>
                     </div>
                 </div>
             </div>
-            <div class="academicCursusTitle" id="academicCursusTitle">
-                <div class="titleBar">
-                    <div class="imageText">
-                        <img src="image/motarboard_30px.png" alt="" class="geantIcon">
+            <div class="doubleDiv " id="doubleDiv ">
+                <div class="interestPoint " id="interestPoint ">
+                    <div class="mediumBlackText "><b>Point d'interêt</b></div>
+                    <div class="simpleGreyText " style="padding-bottom: 1%; ">Simple passe-temps pour se faire un peu plaisir</div>
+                    <div class="listeImageInteret ">
+                        <img src="image/tango_48px.png " alt=" " class="pleasureImage ">
+                        <img src="image/tv_show_100px.png " alt=" " class="pleasureImage ">
+                        <img src="image/football2_64px.png " alt=" " class="pleasureImage ">
+                        <img src="image/nintendo_switch_48px.png " alt=" " class="pleasureImage ">
+                        <img src="image/nintendo_gamecube__100px.png " alt=" " class="pleasureImage ">
+                        <img src="image/tango_48px.png " alt=" " class="pleasureImage ">
+                        <img src="image/tv_show_100px.png " alt=" " class="pleasureImage ">
+                        <img src="image/football2_64px.png " alt=" " class="pleasureImage ">
+                        <img src="image/nintendo_switch_48px.png " alt=" " class="pleasureImage ">
+                        <img src="image/nintendo_gamecube__100px.png " alt=" " class="pleasureImage ">
+                    </div>
+                </div>
+                <div class="language " id="language ">
+                    <div class="mediumBlackText "><b>Langue</b></div>
+                    <div class="simpleGreyText " style="padding-bottom: 1%; ">Pratiquée en entreprise</div>
+                    <div class="checkLanguage ">
+                        <img src="image/checked_checkbox_24px.png " alt=" ">
+                        <div class="bigGreyText ">Francais</div>
+                    </div>
+                    <div class="checkLanguage ">
+                        <img src="image/checked_checkbox_24px.png " alt=" ">
+                        <div class="bigGreyText ">Anglais</div>
+                    </div>
+                </div>
+            </div>
+            <div class="academicCursusTitle " id="academicCursusTitle ">
+                <div class="titleBar ">
+                    <div class="imageText ">
+                        <img src="image/motarboard_30px.png " alt=" " class="geantIcon ">
                         <div>
-                            <div class="titleText">Cursus Academique</div>
-                            <div class="smallWhiteText"> <i>Diplôme et formation certifiante</i></div>
+                            <div class="titleText ">Cursus Academique</div>
+                            <div class="smallWhiteText "> <i>Diplôme et formation certifiante</i></div>
                         </div>
                     </div>
-                    <img src="image/menu_2_24px.png" alt="" class="treeDots">
+                    <img src="image/menu_2_24px.png " alt=" " class="treeDots ">
                 </div>
             </div>
-            <div class="contentScrollTwo">
-                <div class="scrollTwo">
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+            <div class="contentScrollTwo ">
+                <div class="scrollTwo ">
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
-                    <div class="listProfessionalExp" id="listProfessionalExp">
-                        <div class="mediumBlackText">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
-                        <div class="dateSpeciality">
-                            <div class="simpleBlueText">Août 2016 - </div>
-                            <div class="simpleBlackText"><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
+                    <div class="listProfessionalExp " id="listProfessionalExp ">
+                        <div class="mediumBlackText ">DIPET 2 Electro-technique - <b> @ENSET de DOUALA</b></div>
+                        <div class="dateSpeciality ">
+                            <div class="simpleBlueText ">Août 2016 - </div>
+                            <div class="simpleBlackText "><i>Gestion de l'éclairage d'une maison (Android + Arduino)</i> </div>
                         </div>
-                        <div class="greyBottomLine"></div>
+                        <div class="greyBottomLine "></div>
                     </div>
                 </div>
             </div>
