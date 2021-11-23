@@ -85,7 +85,7 @@
                 <div class="detailProject" id="detailProject">
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
@@ -145,7 +145,7 @@
                     </div>
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>
@@ -160,7 +160,7 @@
                     </div>
                     <div class="checked" id="checked">
                         <!-- <img src="image/checked_checkbox_24px.png" alt="" class="smallIcon"> -->
-                        <i class="fas fa-check-square fa-2x" style="width: 25px; height: 25px; color: #12609E;"></i>
+                        <i class="fas fa-check-square fa-2x" id="myCheck"></i>
                         <div class="properlyProject">
                             <div class="mediumBlackText"><b> Développement front-end </b> </div>
                             <div class="simpleBlackText"> HTML5, SASS, VueJS, Angular, JavaFX</div>

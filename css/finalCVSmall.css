@@ -169,4 +169,8 @@
         width: 97%;
         padding: 1.5%;
     }
+    #myCheck {
+        font-size: 1em;
+        color: #12609E;
+    }
 }
