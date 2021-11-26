@@ -14,176 +14,181 @@
 
 <body style="background-color:#E8E9E9;">
     <div class="contentAll" id="contentAll">
-        <div class="leftBigOne" id="leftBigOne">
-            <div class="bigger">
-                <div class="backgroundPhoto">
-                    <!-- <img src="image/download5.jpg" alt="" class="theBackgroundPhoto" id="theBackGroundPhoto"> -->
-                    <div class="searchBar" id="searchBar">
-                        <img src="image/menu_filled_50px.png" alt="" class="bigIcon" id="bigIcon">
-                        <input type="text" placeholder="Besoin d'un chef de projet ?" class="inputSearchBar">
-                        <img src="image/search_50px.png" alt="" class="smallIcon" id="smallIcon">
-                        <img src="image/thick_vertical_line_filled_50px.png" alt="" class="smallIcon" id="smallIcon">
-                        <img src="image/delete_sign_32px.png" alt="" class="smallIcon" id="smallIcon">
-                    </div>
-                    <div class="personnalInfo" id="personnalInfo">
-                        <img src="image/photo_2021-11-22_21-35-24.jpg" alt="" class="profilePhoto">
-                        <div style="margin-left: 20px;">
-                            <div class="nom"> <b> EBA DJON Ralph </b> </div>
-                            <div class="simpleText">Architecte logiciel / DevOps</div>
-                        </div>
-                    </div>
+        <!-- <div class="leftBigOne" id="leftBigOne"> -->
+        <!-- <div class="bigger"> -->
+        <div class="generalInfo">
+            <div class="backgroundPhoto">
+                <!-- <img src="image/download5.jpg" alt="" class="theBackgroundPhoto" id="theBackGroundPhoto"> -->
+                <div class="searchBar" id="searchBar">
+                    <img src="image/menu_filled_50px.png" alt="" class="bigIcon" id="bigIcon">
+                    <input type="search" placeholder="Besoin d'un chef de projet ?" class="inputSearchBar">
+                    <img src="image/search_50px.png" alt="" class="smallIcon" id="smallIcon">
+                    <img src="image/thick_vertical_line_filled_50px.png" alt="" class="smallIcon" id="smallIcon">
+                    <img src="image/delete_sign_32px.png" alt="" class="smallIcon" id="smallIcon">
                 </div>
-                <div class="coordonate" id="coordonate">
-                    <!-- <div class="contentCircleButton"> -->
-                    <div class="circleButton" id="circleButton">
-                        <img src="image/sent_filled_50px.png" alt="" class="sentIcon">
+                <div class="personnalInfo" id="personnalInfo">
+                    <img src="image/photo_2021-11-22_21-35-24.jpg" alt="" class="profilePhoto">
+                    <div style="margin-left: 20px;">
+                        <div class="nom"> <b> EBA DJON Ralph </b> </div>
+                        <div class="simpleText">Architecte logiciel / DevOps</div>
                     </div>
-                    <!-- </div>  -->
-                    <div class="birthday" id="birthday">
-                        <img src="image/birthday_cake_24px.png" alt="" class="bigIcon">
-                        <div style="margin-left: 20px; width:100%;">
-                            <div class="simpleText">Ne le 03 Mars 2002</div>
-                            <div class="simpleText">Originaire du Centre Cameroun</div>
-                            <div class="simpleText">Célibataire, aucun enfant - Sante RAS</div>
-                            <div class="bottomLine"></div>
-                        </div>
-                    </div>
-
-                    <div class="address" id="address">
-                        <img src="image/location_filled_50px.png" alt="" class="bigIcon">
-                        <div style="margin-left: 20px; width:100%;">
-                            <div class="simpleText">Resident à Logbessou </div>
-                            <div class="simpleText">DOUALA - Cameroun</div>
-                            <div class="oneLineText">
-                                <div class="simpleText">Map :</div>
-                                <div class="thinText"> 4.87544 6.85744</div>
-                            </div>
-                            <div class="bottomLine"></div>
-                        </div>
-                    </div>
-
-                    <div class="telephone" id="telephone">
-                        <img src="image/phone_24px.png" alt="" class="bigIcon">
-                        <div style="margin-left: 20px; width:100%;">
-                            <div class="simpleText">(+237) 694 833 360</div>
-                            <div class="thinText">Mobile, Telegram, Whatsapp</div>
-                            <div class="bottomLine"></div>
-                        </div>
-                    </div>
-                    <div class="mail" id="mail">
-                        <img src="image/filled_message_24px.png" alt="" class="bigIcon">
-                        <div style="margin-left: 20px; width:100%;">
-                            <div class="simpleText">edracresurek@gmail.com </div>
-                            <div class="thinText">Google, Twitter, Linkedin, Github</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="oldProject" id="oldProject">
-                    <div class="detailOldProjet">
-                        <div class="contentSlideBar">
-                            <div class="simpleText" style=" margin-bottom: 10px;">+10 projets </div>
-                        </div>
-                        <div class="thinText " style="margin-bottom: 10px; ">+02 contrats</div>
-                        <div class="thinText " style="margin-bottom: 10px; ">+02 ans d'Exp</div>
-                    </div>
-                    <div class="redBar "></div>
-                </div>
-                <div class="detailProject " id="detailProject ">
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 90%; "></span>
-                                <span class="theEmpty " style="right: 10%; "></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar ">
-                        </div>
-                    </div>
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 75%; "></span>
-                                <span class="theEmpty " style="right: 25%; "></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar ">
-                        </div>
-                    </div>
-
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 80%; "></span>
-                                <span class="theEmpty " style="right: 20%; "></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar ">
-                        </div>
-                    </div>
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 60%; "></span>
-                                <span class="theEmpty " style="right: 40%; "></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar ">
-                        </div>
-                    </div>
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 95%;"></span>
-                                <span class="theEmpty " style="right: 5%;"></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar">
-                        </div>
-                    </div>
-                    <div class="checked " id="checked ">
-                        <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
-                        <i class="fas fa-check-square fa-2x " id="myCheck"></i>
-                        <div class="properlyProject ">
-                            <div class="mediumBlackText "><b> Développement front-end </b> </div>
-                            <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
-                            <div class="slidecontainer ">
-                                <span class="theFulled " style="width: 85%;"></span>
-                                <span class="theEmpty " style="right: 15%;"></span>
-                            </div>
-                        </div>
-                        <div class="contentStar">
-                            <img src="image/star_24px.png " alt=" " class="smallStar ">
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            <div class="coordonate" id="coordonate">
+                <!-- <div class="contentCircleButton"> -->
+                <div class="circleButton" id="circleButton">
+                    <img src="image/sent_filled_50px.png" alt="" class="sentIcon">
+                </div>
+                <!-- </div>  -->
+                <div class="birthday" id="birthday">
+                    <img src="image/birthday_cake_24px.png" alt="" class="bigIcon">
+                    <div style="margin-left: 20px; width:100%;">
+                        <div class="simpleText">Ne le 03 Mars 2002</div>
+                        <div class="simpleText">Originaire du Centre Cameroun</div>
+                        <div class="simpleText">Célibataire, aucun enfant - Sante RAS</div>
+                        <div class="bottomLine"></div>
+                    </div>
+                </div>
+
+                <div class="address" id="address">
+                    <img src="image/location_filled_50px.png" alt="" class="bigIcon">
+                    <div style="margin-left: 20px; width:100%;">
+                        <div class="simpleText">Resident à Logbessou </div>
+                        <div class="simpleText">DOUALA - Cameroun</div>
+                        <div class="oneLineText">
+                            <div class="simpleText">Map :</div>
+                            <div class="thinText"> 4.87544 6.85744</div>
+                        </div>
+                        <div class="bottomLine"></div>
+                    </div>
+                </div>
+
+                <div class="telephone" id="telephone">
+                    <img src="image/phone_24px.png" alt="" class="bigIcon">
+                    <div style="margin-left: 20px; width:100%;">
+                        <div class="simpleText">(+237) 694 833 360</div>
+                        <div class="thinText">Mobile, Telegram, Whatsapp</div>
+                        <div class="bottomLine"></div>
+                    </div>
+                </div>
+                <div class="mail" id="mail">
+                    <img src="image/filled_message_24px.png" alt="" class="bigIcon">
+                    <div style="margin-left: 20px; width:100%;">
+                        <div class="simpleText">edracresurek@gmail.com </div>
+                        <div class="thinText">Google, Twitter, Linkedin, Github</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oldProject" id="oldProject">
+                <div class="detailOldProjet">
+                    <div class="contentSlideBar">
+                        <div class="simpleText" style=" margin-bottom: 10px;">+10 projets </div>
+                    </div>
+                    <div class="thinText " style="margin-bottom: 10px; ">+02 contrats</div>
+                    <div class="thinText " style="margin-bottom: 10px; ">+02 ans d'Exp</div>
+                </div>
+            </div>
+            <div class="contentRedBar">
+                <div class="redBar "></div>
+            </div>
         </div>
+        <div class="detailProject" id="detailProject ">
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 90%; "></span>
+                        <span class="theEmpty " style="right: 10%; "></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar ">
+                </div>
+            </div>
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 75%; "></span>
+                        <span class="theEmpty " style="right: 25%; "></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar ">
+                </div>
+            </div>
+
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 80%; "></span>
+                        <span class="theEmpty " style="right: 20%; "></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar ">
+                </div>
+            </div>
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 60%; "></span>
+                        <span class="theEmpty " style="right: 40%; "></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar ">
+                </div>
+            </div>
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 95%;"></span>
+                        <span class="theEmpty " style="right: 5%;"></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar">
+                </div>
+            </div>
+            <div class="checked " id="checked ">
+                <!-- <img src="image/checked_checkbox_24px.png " alt=" " class="smallIcon "> -->
+                <i class="fas fa-check-square fa-2x " id="myCheck"></i>
+                <div class="properlyProject ">
+                    <div class="mediumBlackText "><b> Développement front-end </b> </div>
+                    <div class="simpleBlackText "> HTML5, SASS, VueJS, Angular, JavaFX</div>
+                    <div class="slidecontainer ">
+                        <span class="theFulled " style="width: 85%;"></span>
+                        <span class="theEmpty " style="right: 15%;"></span>
+                    </div>
+                </div>
+                <div class="contentStar">
+                    <img src="image/star_24px.png " alt=" " class="smallStar ">
+                </div>
+            </div>
+
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
         <div class="rigthBigOne " id="rigthBigOne ">
             <div class="titleProfessionalExp " id="titleProfessionalExp ">
                 <div class="titleBar ">
@@ -252,13 +257,15 @@
                 <div class="language " id="language ">
                     <div class="mediumBlackText "><b>Langue</b></div>
                     <div class="simpleGreyText " style="padding-bottom: 1%; ">Pratiquée en entreprise</div>
-                    <div class="checkLanguage ">
-                        <img src="image/checked_checkbox_24px.png " alt=" ">
-                        <div class="bigGreyText ">Francais</div>
-                    </div>
-                    <div class="checkLanguage ">
-                        <img src="image/checked_checkbox_24px.png " alt=" ">
-                        <div class="bigGreyText ">Anglais</div>
+                    <div class="contentLanguage">
+                        <div class="checkLanguage ">
+                            <img src="image/checked_checkbox_24px.png " alt=" ">
+                            <div class="bigGreyText ">Francais</div>
+                        </div>
+                        <div class="checkLanguage ">
+                            <img src="image/checked_checkbox_24px.png " alt=" ">
+                            <div class="bigGreyText ">Anglais</div>
+                        </div>
                     </div>
                 </div>
             </div>

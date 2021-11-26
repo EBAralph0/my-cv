@@ -1,15 +1,8 @@
 .contentAll {
     height: 1500px;
     width: 100%;
-    display: grid;
-    /* margin-bottom: 150px; */
-    grid-template-columns: 39.25% 59.25%;
-    grid-column-gap: 1.5%;
-    grid-template-areas: "generalInfo rigthBigOne" "detailProject rigthBigOne""detailProject rigthBigOne";
-}
-
-.generalInfo {
-    grid-area: generalInfo;
+    display: flex;
+    margin-bottom: 150px;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +22,7 @@
 }
 
 .leftBigOne {
-    /* width: 42%; */
+    width: 42%;
     margin-right: 1.5%;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 5px 5px rgba(138, 133, 133, 0.459);
@@ -245,7 +238,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    grid-area: detailProject;
 }
 
 .contentSlideBar {
@@ -298,12 +290,11 @@
 .rigthBigOne {
     display: flex;
     flex-flow: column;
-    /* width: 57%; */
+    width: 57%;
     height: 100%;
     border-radius: 0 0 5px 5px;
     /* box-shadow: 0px 0px 0px 3px rgba(184, 179, 179, 0.884); */
     padding-bottom: 1%;
-    grid-area: rigthBigOne;
 }
 
 .titleBar {
@@ -382,7 +373,7 @@
 .contentScroll {
     display: flex;
     flex-flow: column;
-    height: 523.5px;
+    height: 542px;
     border-radius: 0px 0px 5px 5px;
     margin-bottom: 3%;
     padding: 3%;
@@ -420,7 +411,7 @@
     /* align-items: center; */
     justify-content: space-between;
     width: 100%;
-    /* height: 400px; */
+    height: 400px;
 }
 
 .interestPoint {
@@ -498,7 +489,7 @@
 .contentScrollTwo {
     display: flex;
     flex-flow: column;
-    height: 523.5px;
+    height: 542px;
     border-radius: 0px 0px 5px 5px;
     padding-inline: 3%;
     background-color: white;
