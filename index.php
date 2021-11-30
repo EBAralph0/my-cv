@@ -15,10 +15,16 @@
 <body style="background-color:#E8E9E9;">
     <div class="contentAll" id="contentAll">
        <?php
-        include ("php/generalInfo.php") ;
-        include ("php/detailProject.php"); 
-        include ("php/rigthBigOne.php") 
-       ?>
+            include ("php/generalInfo.php") ;
+            include ("php/detailProject.php");
+        ?>
+       <div class="rigthBigOne" id="rigthBigOne"> 
+           <?php
+                 include ("php/allContentScroll.php");
+                 include ("php/doubleDiv.php");
+                 include ("php/allContentScrollTwo.php");
+            ?>
+       </div>
     </div>
 </body>
 
