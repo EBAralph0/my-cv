@@ -76,6 +76,12 @@ $mail="edracresurek@gmail.com";
 $nombreProjet=15;
 $nombreContrat=02;
 $anneeExperience=02;
+
+$ellGeneralInfo =[
+    'photoProfil' => $photoProfil,
+    'photoCouverture'=> $photoCouverture
+
+]
 ?>
 <div class="generalInfo">
             <div class="backgroundPhoto" style="background: url(<?php echo $photoCouverture ?>);background-size: cover;">

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .contentAll {
         height: 100%;
         width: 100%;
@@ -68,6 +68,14 @@
         width: 100%;
         order: 2;
     }
+    .bigIcon {
+        width: 25px;
+        height: 25px;
+    }
+    .smallIcon {
+        width: 14px;
+        height: 14px;
+    }
     .simpleText {
         font-size: large;
         color: white;
@@ -90,7 +98,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .titleText {
-        font-size: large;
+        font-size: medium;
         color: rgb(255, 255, 255);
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -198,7 +206,7 @@
         justify-content: flex-end;
         background-color: #12609E;
         width: 90%;
-        height: 100px;
+        height: 80px;
         border-style: none;
         padding-left: 5%;
         padding-right: 5%;
