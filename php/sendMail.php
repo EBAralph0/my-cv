@@ -24,6 +24,9 @@ $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
 
+//declare void boby
+$myBody;
+
 try {
     //Server settings
     $mail->SMTPDebug  = 1;
@@ -45,6 +48,15 @@ try {
 
     //Recipients eand content
     $mail->IsHTML(true);
+    
+    ob_start();
+    require("../index.php");
+    $myBody = ob_get_contents();
+
+    ob_clean();
+
+
+    $mail->Body = $myBody;
     $mail->AddAddress($emailDestination,$myName);
     $mail->SetFrom($myEmail,$myName);
     //$mail->AddReplyTo("reply-to-".$emailDestination);
@@ -58,16 +70,25 @@ try {
 
     
 
-    $mail->MsgHTML($content); 
+    $mail->MsgHTML($myBody); 
+    
         if(!$mail->Send()) {
-        echo "Error while sending Email.";
+             $_SESSION["sentedMail"]=false;
+             $_SESSION["feedBack"]="ERRRRRRRRR";
+            header("location:../index.php");
         } else {
-        echo "Email sent successfully";
+            $_SESSION["sentedMail"]=true;
+            $_SESSION["feedBack"]="OKKKKKKKKKKK";
+            header("location:../index.php");
         }
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
 
+    } catch (Exception $e) {
+        // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        $_SESSION["sentedMail"]=false;
+        header("location:../index.php");
+    }
 }
-else{echo 'WHAT THE HECK ARE YOU LOOKING HERE FOR ???';}
+else{
+    echo '<h1><b>WHAT THE HE*L ARE YOU LOOKING FOR HERE ?</b></h1>';
+}
 ?>

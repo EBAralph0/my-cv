@@ -338,9 +338,9 @@ Class Personne
                 <form method="get" action="php/sendMail.php">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="email" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required>
+                        <input type="text" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required>
 
-                        <div class="modal-footer">
+                        <div class="modal-footer" style="display:flex; justify-content:space-between;">
                             <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                             <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button>
                         </div>
@@ -351,6 +351,25 @@ Class Personne
         </div>
     </div>
 </div>
+<?php 
+var_dump($_SESSION);
+    if(isset($_SESSION["sentedMail"])){
+        if($_SESSION["sentedMail"]== true){
+            echo '<script>
+                alert("'.$_SESSION["feedBack"].'");
+            </script>';
+        }
+        else{
+            echo '<script>
+                alert("'.$_SESSION["feedBack"].'");
+            </script>';
+        }
+    }
+    unset($_SESSION["feedBack"]);
+    unset($_SESSION["sentedMail"]);
+
+?>
+
 <script>
     function myScript() {
         if(document.getElementById('circleButton').className == 'circleButton'){
