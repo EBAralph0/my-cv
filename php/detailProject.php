@@ -31,7 +31,7 @@
             85
         ]
         
-    ]
+        ];
 ?>
 <div class="detailProject" id="detailProject ">
             <?php

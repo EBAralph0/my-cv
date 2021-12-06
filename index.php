@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css/finalCV.css">
     <link rel="stylesheet" href="css/finalCVSmall.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background-color:#E8E9E9;">

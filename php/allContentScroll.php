@@ -60,10 +60,6 @@
     $firstExperienceDate = strftime($allExperiences[$tableLength][2]); 
     $expYearOld =round((time()-strtotime($firstExperienceDate))/(3600*24*365.25));
 
-    //echo $firstExperienceDate;
-    //echo $actualDate;
-    //echo $expYearOld;
-
 ?>
  <div class="titleProfessionalExp " id="titleProfessionalExp ">
                 <div class="titleBar ">
@@ -87,7 +83,7 @@
                         echo '
                             <div class="listProfessionalExp " id="listProfessionalExp ">
                             <div class="mediumBlackText ">'.$nomPoste.' - <b> @'.$entreprise.'</b></div>
-                            <div class="simpleBlueText ">De '.utf8_encode(strftime("%B %Y",strtotime($dateDebut))).' à nos jours - '.$lien.'</div>
+                            <div class="simpleBlueText ">De '.ucfirst(utf8_encode(strftime("%B %Y",strtotime($dateDebut)))).' à nos jours - '.$lien.'</div>
                             <div class="simpleGreyText ">'.$detail.'</div>
                             <div class="greyBottomLine "></div>
                         </div>
@@ -97,7 +93,7 @@
                     echo '
                     <div class="listProfessionalExp " id="listProfessionalExp ">
                     <div class="mediumBlackText ">'.$nomPoste.' - <b> @'.$entreprise.'</b></div>
-                    <div class="simpleBlueText ">De '.utf8_encode(strftime("%B %Y",strtotime($dateDebut))).' à '.utf8_encode(strftime("%B %Y",strtotime($dateFin))).' - '.$lien.'</div>
+                    <div class="simpleBlueText ">De '.ucfirst(utf8_encode(strftime("%B %Y",strtotime($dateDebut)))).' à '.utf8_encode(strftime("%B %Y",strtotime($dateFin))).' - '.$lien.'</div>
                     <div class="simpleGreyText ">'.$detail.'</div>
                     <div class="greyBottomLine "></div>
                 </div>
