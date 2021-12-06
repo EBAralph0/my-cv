@@ -252,7 +252,7 @@ Class Personne
         <div class="smallCircleButtonOne" id="smallCircleButtonOne">
             <img src="image/pdf_2_48px.png" alt="" srcset="" class="sentedIcon" id="sentedIcon1">
         </div>
-        <div class="smallCircleButtonTwo" id="smallCircleButtonTwo">
+        <div class="smallCircleButtonTwo" id="smallCircleButtonTwo"  data-toggle="modal" data-target="#myModal">
             <img src="image/gmail_48px.svg" alt="" srcset="" class="sentedIcon" id="sentedIcon2">
         </div>
         <div class="circleButton" id="circleButton" onclick="myScript()">
