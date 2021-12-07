@@ -13,7 +13,7 @@ require '../vendor/phpmailer/phpmailer/src/SMTP.php';
 
 if(isset($_GET['sendEmailButton'])){
 $emailDestination=$_GET['receptionEmail'];
-
+ 
 //declare personal var
 $myEmail = 'edracresurek@gmail.com';
 $myPassword='Azerter1?';
@@ -23,6 +23,7 @@ $myName='Ralph Eba';
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
+$mail->setLanguage('fr','../vendor/phpmailer/phpmailer/language/');
 
 //declare void boby
 $myBody;
@@ -74,11 +75,12 @@ try {
     
         if(!$mail->Send()) {
              $_SESSION["sentedMail"]=false;
-             $_SESSION["feedBack"]="ERRRRRRRRR";
+             $_SESSION["feedBack"]=$mail->ErrorInfo;
+             $_SESSION["resentMail"]=$emailDestination;
             header("location:../index.php");
         } else {
             $_SESSION["sentedMail"]=true;
-            $_SESSION["feedBack"]="OKKKKKKKKKKK";
+            $_SESSION["feedBack"]=$mail->ErrorInfo;
             header("location:../index.php");
         }
 

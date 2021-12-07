@@ -346,6 +346,28 @@
         transform: translateX(-150%);
     }
     
+    .loadingImage {
+        -webkit-animation: loadingImage 2s linear infinite;
+        animation: loadingImage 2s linear infinite;
+    }
+    
+    .appearImage {
+        -webkit-animation: loadingImage 0.5s linear 2;
+        animation: loadingImage 0.5s linear 2;
+        font-size: 5em;
+    }
+    
+    @-webkit-keyframes loadingImage {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+        }
+    }
+    
     .coordonate {
         position: relative;
         flex-flow: column;

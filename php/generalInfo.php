@@ -324,6 +324,7 @@ Class Personne
         <div class="redBar "></div>
     </div>
 </div>
+
 <!-- The Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -335,6 +336,11 @@ Class Personne
                 </button>
             </div>
             <div class="modal-body" >
+                <div style="display: flex;justify-content:center;" >
+                        <div style="display: flex;flex-flow:column;align-items:center;">  
+                        <i class="fas fa-spinner loadingImage" id="loadingIcon1" style="opacity: 0%;"></i>
+                        </div>
+                </div>
                 <form method="get" action="php/sendMail.php">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Email</label>
@@ -351,22 +357,101 @@ Class Personne
         </div>
     </div>
 </div>
+
+
+<div class="modal fade show in" id="successModal">
+<div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Envoie Reussi !</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <form method="" action="">
+                    <div style="display: flex;justify-content:center;" >
+                        <div style="display: flex;flex-flow:column;align-items:center;">
+                        <i class="fas fa-check-circle appearImage " style="color: green;"></i>
+                        <i class="fas exclamation-triangle appearImage " style="color: tomato;"></i>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group"> -->
+                        <!-- <label for="recipient-name" class="col-form-label">Email</label> -->
+                        <!-- <input type="text" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required> -->
+
+                        <div class="modal-footer" style="display:flex; justify-content:flex-end;">
+                            <button type="reset" class="btn btn-primary" data-dismiss="modal">OK</button>
+                            <!-- <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button> -->
+                        </div>
+                    <!-- </div> -->
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade show in" id="failedModal">
+<div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Echec de l'envoie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div style="display: flex;justify-content:center;" >
+                    <div style="display: flex;flex-flow:column;align-items:center;">  
+                    <i class="fas fa-exclamation-triangle appearImage " style="color: tomato;"></i>
+                    <h6 class="modal-title" id="exampleModalLabel"><?php echo $_SESSION["feedBack"] ?></h6>
+                    </div>
+                </div>
+                <form method="get" action="php/sendMail.php">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <?php 
+                            if(isset($_SESSION["resentMail"])){
+                                $resentEmail=$_SESSION["resentMail"];
+                            }
+                        ?>
+                        <input type="text" value="<?php echo $resentEmail ?>" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required>
+
+                        <div class="modal-footer" style="display:flex; justify-content:space-between;">
+                            <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                            <button type="submit" name="sendEmailButton" class="btn btn-primary" >Renvoyer</button>
+                        </div>
+                       
+                    </div>
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+
 <?php 
-var_dump($_SESSION);
     if(isset($_SESSION["sentedMail"])){
         if($_SESSION["sentedMail"]== true){
             echo '<script>
-                alert("'.$_SESSION["feedBack"].'");
-            </script>';
+            $(document).ready(function(){
+                $("#successModal").modal("show");
+            });
+        </script>';
         }
         else{
             echo '<script>
-                alert("'.$_SESSION["feedBack"].'");
-            </script>';
+            $(document).ready(function(){
+                $("#failedModal").modal("show");
+            });
+        </script>';
         }
     }
     unset($_SESSION["feedBack"]);
     unset($_SESSION["sentedMail"]);
+    unset($_SESSION["resentMail"]);
+
 
 ?>
 
@@ -391,4 +476,10 @@ var_dump($_SESSION);
             document.getElementById('sentedIcon2').className ='sentedIcon';
         }
     }
+    function sendButton(){
+        document.getElementById("loadingIcon1").style.opacity="100%"
+    }
+    function resendButton(){}
+    function cancelButton(){}
+    function recancelButton(){}
 </script>

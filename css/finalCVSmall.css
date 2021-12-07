@@ -273,6 +273,11 @@
         order: 3;
         border-radius: 5px;
     }
+    .appearImage {
+        -webkit-animation: loadingImage 0.5s linear 2;
+        animation: loadingImage 0.5s linear 2;
+        font-size: 3em;
+    }
     .coordonate {
         position: relative;
         flex-flow: column;
