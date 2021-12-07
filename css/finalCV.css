@@ -349,11 +349,24 @@
     .loadingImage {
         -webkit-animation: loadingImage 2s linear infinite;
         animation: loadingImage 2s linear infinite;
+        opacity: 0%;
+    }
+    
+    .loadingImageActive {
+        -webkit-animation: loadingImage 1s steps(8) infinite;
+        animation: loadingImage 1s steps(8) infinite;
+        opacity: 100%;
     }
     
     .appearImage {
         -webkit-animation: loadingImage 0.5s linear 2;
         animation: loadingImage 0.5s linear 2;
+        font-size: 5em;
+    }
+    
+    .appeaurToloadingImageActive {
+        -webkit-animation: loadingImage 1s steps(8) infinite;
+        animation: loadingImage 1s steps(8) infinite;
         font-size: 5em;
     }
     

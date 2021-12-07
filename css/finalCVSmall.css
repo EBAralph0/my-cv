@@ -278,6 +278,11 @@
         animation: loadingImage 0.5s linear 2;
         font-size: 3em;
     }
+    .appeaurToloadingImageActive {
+        -webkit-animation: loadingImage 1s steps(8) infinite;
+        animation: loadingImage 1s steps(8) infinite;
+        font-size: 3em;
+    }
     .coordonate {
         position: relative;
         flex-flow: column;

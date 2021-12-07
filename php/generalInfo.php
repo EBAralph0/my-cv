@@ -269,7 +269,7 @@ Class Personne
                 <div class="simpleText"><?php echo $pernonne1->getStatutMatrimonial() ?>,
                     <?php
                     if ($pernonne1->getnombreEnfant() < 1) {
-                        echo "Pas d'enfant";
+                        echo "Aucun enfant";
                     } elseif ($pernonne1->getNombreEnfant() == 1) {
                         echo $pernonne1->getNombreEnfant() . " enfant";
                     } else {
@@ -338,7 +338,7 @@ Class Personne
             <div class="modal-body" >
                 <div style="display: flex;justify-content:center;" >
                         <div style="display: flex;flex-flow:column;align-items:center;">  
-                        <i class="fas fa-spinner loadingImage" id="loadingIcon1" style="opacity: 0%;"></i>
+                        <i class="fas fa-spinner loadingImage" id="loadingIcon1"></i>
                         </div>
                 </div>
                 <form method="get" action="php/sendMail.php">
@@ -348,7 +348,7 @@ Class Personne
 
                         <div class="modal-footer" style="display:flex; justify-content:space-between;">
                             <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                            <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button>
+                            <button onclick="sendButton();" type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button>
                         </div>
                        
                     </div>
@@ -359,7 +359,7 @@ Class Personne
 </div>
 
 
-<div class="modal fade show in" id="successModal">
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
 <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -392,7 +392,7 @@ Class Personne
 </div>
 
 
-<div class="modal fade show in" id="failedModal">
+<div class="modal fade" id="failedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
 <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -404,7 +404,7 @@ Class Personne
             <div class="modal-body" >
                 <div style="display: flex;justify-content:center;" >
                     <div style="display: flex;flex-flow:column;align-items:center;">  
-                    <i class="fas fa-exclamation-triangle appearImage " style="color: tomato;"></i>
+                    <i class="fas fa-exclamation-triangle appearImage" id ="errorImage" style="color: tomato;"></i>
                     <h6 class="modal-title" id="exampleModalLabel"><?php echo $_SESSION["feedBack"] ?></h6>
                     </div>
                 </div>
@@ -414,13 +414,14 @@ Class Personne
                         <?php 
                             if(isset($_SESSION["resentMail"])){
                                 $resentEmail=$_SESSION["resentMail"];
+                                
                             }
                         ?>
                         <input type="text" value="<?php echo $resentEmail ?>" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required>
 
                         <div class="modal-footer" style="display:flex; justify-content:space-between;">
                             <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                            <button type="submit" name="sendEmailButton" class="btn btn-primary" >Renvoyer</button>
+                            <button onclick="resendButton();" type="submit" name="sendEmailButton" class="btn btn-primary" >Renvoyer</button>
                         </div>
                        
                     </div>
@@ -477,9 +478,15 @@ Class Personne
         }
     }
     function sendButton(){
-        document.getElementById("loadingIcon1").style.opacity="100%"
+        if(document.getElementById('loadingIcon1').className='fas fa-spinner loadingImage'){
+            document.getElementById('loadingIcon1').className='fas fa-spinner loadingImageActive';
+        }
     }
-    function resendButton(){}
+    function resendButton(){
+        if(document.getElementById('errorImage').className='fas fa-exclamation-triangle appearImage'){
+            document.getElementById('errorImage').className='fas fa-spinner appeaurToloadingImageActive';
+        }
+    }
     function cancelButton(){}
     function recancelButton(){}
 </script>

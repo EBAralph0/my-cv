@@ -72,6 +72,7 @@ try {
     
 
     $mail->MsgHTML($myBody); 
+    $errorCode=$mail->getSMTPInstance()->getError();
     
         if(!$mail->Send()) {
              $_SESSION["sentedMail"]=false;
