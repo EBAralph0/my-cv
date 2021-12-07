@@ -223,7 +223,7 @@ Class Personne
 
 
 }
-    $pernonne1 =new Personne("EBA DJON","Ralph","image/photo_2021-11-22_21-35-24.jpg","image/photo_2021-11-22_21-34-47.jpg","Programmeur web / mobile",'03-03-2002',"Cameroun","Centre","Célibataire",
+    $pernonne1 =new Personne("EBA DJON","Ralph","/image/photo_2021-11-22_21-35-24.jpg","/image/photo_2021-11-22_21-34-47.jpg","Programmeur web / mobile",'03-03-2002',"Cameroun","Centre","Célibataire",
                                 "Aucun","RAS","Logbessou","Cameroun","Douala","4.54654","4.87956","699 887 766",
                                 "Télégram, Whatsapp, Mobile","Gmail, Twitter, Linkedin, Github","edracresurek@gmail.com",
                                 10,03,02);
