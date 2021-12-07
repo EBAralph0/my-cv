@@ -223,13 +223,13 @@ Class Personne
 
 
 }
-    $pernonne1 =new Personne("EBA DJON","Ralph","/image/photo_2021-11-22_21-35-24.jpg","/image/photo_2021-11-22_21-34-47.jpg","Programmeur web / mobile",'03-03-2002',"Cameroun","Centre","Célibataire",
+    $pernonne1 =new Personne("EBA DJON","Ralph","image/photo_2021-11-22_21-35-24.jpg","image/photo_2021-11-22_21-34-47.jpg","Programmeur web / mobile",'03-03-2002',"Cameroun","Centre","Célibataire",
                                 "Aucun","RAS","Logbessou","Cameroun","Douala","4.54654","4.87956","699 887 766",
                                 "Télégram, Whatsapp, Mobile","Gmail, Twitter, Linkedin, Github","edracresurek@gmail.com",
                                 10,03,02);
 ?> 
 <div class="generalInfo">
-    <div class="backgroundPhoto" style="background: url(<?php echo $pernonne1->getPhotoCouverture() ?>);background-size: cover;">
+    <div class="backgroundPhoto" style="background: url('<?php echo $pernonne1->getPhotoCouverture() ?>');background-size: cover;">
         <!-- <img src="image/download5.jpg" alt="" class="theBackgroundPhoto" id="theBackGroundPhoto"> -->
         <div class="searchBar" id="searchBar">
             <img src="image/menu_filled_50px.png" alt="" class="bigIcon" id="bigIcon">
@@ -239,7 +239,7 @@ Class Personne
             <img src="image/delete_sign_filled_50px.svg" alt="" class="smallIcon" id="smallIcon">
         </div>
         <div class="personnalInfo" id="personnalInfo">
-            <img src="<?php echo $pernonne1->getPhotoProfil() ?>" alt="" class="profilePhoto">
+            <img src='<?php echo $pernonne1->getPhotoProfil() ?>' alt="" class="profilePhoto">
             <div style="margin-left: 20px;">
                 <div class="nom"> <b> <?php echo $pernonne1->getNom(). " " . $pernonne1->getPrenom() ?> </b> </div>
                 <div class="simpleText"><?php echo $pernonne1->getMetier() ?></div>
@@ -269,7 +269,7 @@ Class Personne
                 <div class="simpleText"><?php echo $pernonne1->getStatutMatrimonial() ?>,
                     <?php
                     if ($pernonne1->getnombreEnfant() < 1) {
-                        echo "Aucun enfant";
+                        echo "Pas d'enfant";
                     } elseif ($pernonne1->getNombreEnfant() == 1) {
                         echo $pernonne1->getNombreEnfant() . " enfant";
                     } else {
