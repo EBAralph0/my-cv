@@ -29,6 +29,7 @@
         ?>
        <div class="rigthBigOne" id="rigthBigOne"> 
            <?php
+                require "php/experience.php";
                  include ("php/allContentScroll.php");
                  include ("php/doubleDiv.php");
                  include ("php/allContentScrollTwo.php");

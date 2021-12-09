@@ -218,7 +218,7 @@
         height: 80px;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
+        box-shadow: 0px 0px 10px rgba(48, 48, 77, 0.767);
         /* margin-top: -5%; */
         top: -10%;
         right: 5%;
@@ -327,7 +327,7 @@
         top: -7.5%;
         right: 7.5%;
         transition-duration: 0.5s;
-        transform: translateX(-300%);
+        transform: translateX(-300%) rotate(-360deg);
     }
     
     .activeSmallCircleButtonTwo {
@@ -343,7 +343,7 @@
         top: -7.5%;
         right: 7.5%;
         transition-duration: 0.5s;
-        transform: translateX(-150%);
+        transform: translateX(-150%) rotate(-360deg);
     }
     
     .loadingImage {
@@ -359,8 +359,8 @@
     }
     
     .appearImage {
-        -webkit-animation: loadingImage 0.5s linear 2;
-        animation: loadingImage 0.5s linear 2;
+        -webkit-animation: loadingImage 0.5s linear 1;
+        animation: loadingImage 0.5s linear 1;
         font-size: 5em;
     }
     
@@ -379,6 +379,35 @@
             -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
         }
+    }
+    
+    .contentTwoSmallForms {
+        display: flex;
+    }
+    
+    .pdfBigImage {
+        width: 100px;
+        height: 100px;
+        border-style: none;
+        background-color: transparent;
+        font-size: 5em;
+        color: #12609E;
+    }
+    
+    .pdfBigImage:hover {
+        width: 100px;
+        height: 100px;
+        border-style: none;
+        background-color: rgba(128, 128, 128, 0.219);
+        font-size: 5em;
+        color: #0b5592;
+    }
+    
+    .bigImageButton {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .coordonate {

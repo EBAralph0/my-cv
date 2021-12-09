@@ -185,7 +185,7 @@
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
         /* margin-top: -5%; */
-        top: -8%;
+        top: -7%;
         right: 5%;
     }
     .activeCircleButton {
@@ -199,7 +199,7 @@
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
         /* margin-top: -5%; */
-        top: -8%;
+        top: -7%;
         right: 5%;
         /* -webkit-animation-name: cssAnimationtwo; */
     }
@@ -208,14 +208,15 @@
         border-style: none;
         border-radius: 100%;
         position: absolute;
-        width: 0px;
-        height: 0px;
+        width: 45px;
+        height: 45px;
         align-items: center;
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
+        opacity: 0%;
         /* margin-top: -5%; */
-        top: -0.5%;
-        right: 12.5%;
+        top: -7%;
+        right: 5%;
         /* -webkit-animation-name: cssAnimationtwo; */
         transition-duration: 0.5s;
     }
@@ -224,13 +225,14 @@
         border-style: none;
         border-radius: 100%;
         position: absolute;
-        width: 0px;
-        height: 0px;
+        width: 45px;
+        height: 45px;
         align-items: center;
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
-        top: -0.5%;
-        right: 12.5%;
+        opacity: 0%;
+        top: -7%;
+        right: 5%;
         transition-duration: 0.5s;
     }
     .activeSmallCircleButtonOne {
@@ -238,30 +240,32 @@
         border-style: none;
         border-radius: 100%;
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
         align-items: center;
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
-        top: -4.5%;
-        right: 12.5%;
+        top: -7%;
+        right: 10.5%;
+        opacity: 100%;
         transition-duration: 0.5s;
-        transform: translateX(-300%);
+        transform: translateX(-300%) rotate(-360deg);
     }
     .activeSmallCircleButtonTwo {
         background-color: #eef3ff;
         border-style: none;
         border-radius: 100%;
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
         align-items: center;
         justify-content: center;
         box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
-        top: -4.5%;
-        right: 12.5%;
+        top: -7%;
+        right: 10.5%;
+        opacity: 100%;
         transition-duration: 0.5s;
-        transform: translateX(-150%);
+        transform: translateX(-150%) rotate(-360deg);
     }
     .detailProject {
         display: flex;
@@ -274,8 +278,8 @@
         border-radius: 5px;
     }
     .appearImage {
-        -webkit-animation: loadingImage 0.5s linear 2;
-        animation: loadingImage 0.5s linear 2;
+        -webkit-animation: loadingImage 0.5s linear 1;
+        animation: loadingImage 0.5s linear 1;
         font-size: 3em;
     }
     .appeaurToloadingImageActive {

@@ -249,8 +249,8 @@ Class Personne
     <div class="coordonate" id="coordonate">
 
         <!-- <div class="contentCircleButton"> data-toggle="modal" data-target="#myModal" -->
-        <div class="smallCircleButtonOne" id="smallCircleButtonOne">
-            <img src="image/pdf_2_48px.png" alt="" srcset="" class="sentedIcon" id="sentedIcon1">
+        <div class="smallCircleButtonOne" id="smallCircleButtonOne" data-toggle="modal" data-target="#myPdfModal">
+                <img src="image/pdf_2_48px.png" alt="" srcset="" class="sentedIcon" id="sentedIcon1" >
         </div>
         <div class="smallCircleButtonTwo" id="smallCircleButtonTwo"  data-toggle="modal" data-target="#myModal">
             <img src="image/gmail_48px.svg" alt="" srcset="" class="sentedIcon" id="sentedIcon2">
@@ -431,7 +431,40 @@ Class Personne
     </div>
 </div>
 
-
+<!-- The PDF Modal -->
+<div class="modal fade" id="myPdfModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Exporter le document PDF</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div style="display: flex;justify-content:center;" >
+                        <div style="display: flex;flex-flow:column;align-items:center;">  
+                        <i class="fas fa-spinner loadingImage" id="loadingIcon1"></i>
+                        </div>
+                </div>
+                <div class="contentTwoSmallForms">
+                    <form method="get" action="php/convertPdf.php">
+                        <div class="bigImageButton">
+                            <label for="recipient-name" class="modal-title">Télécharger</label>
+                            <button class="fas fa-file-download pdfBigImage" type="submit" name="dowloadPdf"></button>
+                        </div>
+                    </form>
+                    <!-- <form method="get" action="php/convertPdf.php">
+                        <div class="bigImageButton">
+                            <label for="recipient-name" class="modal-title">Tranferer par mail</label>
+                            <button class="fas fa-file-download pdfBigImage" type="submit" name="dowloadPdf"></button>
+                        </div>
+                    </form> -->
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
 <?php 
     if(isset($_SESSION["sentedMail"])){
         if($_SESSION["sentedMail"]== true){
