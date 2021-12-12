@@ -360,35 +360,35 @@ Class Personne
 
 
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-<div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Envoie Reussi !</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" >
-                <form method="" action="">
-                    <div style="display: flex;justify-content:center;" >
-                        <div style="display: flex;flex-flow:column;align-items:center;">
-                        <i class="fas fa-check-circle appearImage " style="color: green;"></i>
-                        <i class="fas exclamation-triangle appearImage " style="color: tomato;"></i>
+    <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Envoie Reussi !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cancelButton();">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <form method="" action="">
+                        <div style="display: flex;justify-content:center;" >
+                            <div style="display: flex;flex-flow:column;align-items:center;">
+                            <i class="fas fa-check-circle appearImage " style="color: green;"></i>
+                            <i class="fas exclamation-triangle appearImage " style="color: tomato;"></i>
+                            </div>
                         </div>
-                    </div>
-                    <!-- <div class="form-group"> -->
-                        <!-- <label for="recipient-name" class="col-form-label">Email</label> -->
-                        <!-- <input type="text" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label for="recipient-name" class="col-form-label">Email</label> -->
+                            <!-- <input type="text" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required> -->
 
-                        <div class="modal-footer" style="display:flex; justify-content:flex-end;">
-                            <button type="reset" class="btn btn-primary" data-dismiss="modal">OK</button>
-                            <!-- <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button> -->
-                        </div>
-                    <!-- </div> -->
-                </form>
-           </div>
+                            <div class="modal-footer" style="display:flex; justify-content:flex-end;">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="cancelButton();">OK</button>
+                                <!-- <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button> -->
+                            </div>
+                        <!-- </div> -->
+                    </form>
+            </div>
+            </div>
         </div>
-    </div>
 </div>
 
 
@@ -397,7 +397,7 @@ Class Personne
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Echec de l'envoie</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cancelButton();">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -420,7 +420,7 @@ Class Personne
                         <input type="text" value="<?php echo $resentEmail ?>" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required>
 
                         <div class="modal-footer" style="display:flex; justify-content:space-between;">
-                            <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                            <button type="button" onclick="cancelButton();" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                             <button onclick="resendButton();" type="submit" name="sendEmailButton" class="btn btn-primary" >Renvoyer</button>
                         </div>
                        
@@ -465,6 +465,8 @@ Class Personne
         </div>
     </div>
 </div>
+
+
 <?php 
     if(isset($_SESSION["sentedMail"])){
         if($_SESSION["sentedMail"]== true){
@@ -520,6 +522,18 @@ Class Personne
             document.getElementById('errorImage').className='fas fa-spinner appeaurToloadingImageActive';
         }
     }
-    function cancelButton(){}
+    function cancelButton(){
+        if(document.getElementById('successModal').className='modal fade show'){
+            $("#successModal").modal("hide");            // document.getElementById('successModal').className='modal fade hide';
+            // document.body.classList.remove('modal-open');
+            // document.getElementsByClassName("modal-backdrop fade show")[0].className=null;
+            // document.body.style="overflow:none";
+        }
+        if(document.getElementById('failedModal').className='modal fade show'){
+            $("#failedModal").modal("hide");
+            // document.body.style="overflow:none";
+
+        }
+    }
     function recancelButton(){}
 </script>
