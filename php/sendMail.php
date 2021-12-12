@@ -23,7 +23,7 @@ $myName='Ralph Eba';
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
-$mail->setLanguage('fr','../vendor/phpmailer/phpmailer/language/');
+// $mail->setLanguage('fr','../vendor/phpmailer/phpmailer/language/');
 
 //declare void boby
 $myBody;
@@ -76,7 +76,21 @@ try {
     
         if(!$mail->Send()) {
              $_SESSION["sentedMail"]=false;
-             $_SESSION["feedBack"]=$mail->ErrorInfo;
+             if($mail->ErrorInfo == "You must provide at least one recipient email address." ){
+                $_SESSION["feedBack"]="L'adresse entrée est invalide";
+             }
+             else if($mail->ErrorInfo == "SMTP Error: data not accepted.SMTP server error: DATA END command failed"){
+                $_SESSION["feedBack"]="Une érreur est survenu lors de l'envoie";
+             }
+              else if($mail->ErrorInfo == "SMTP Error: The following recipients failed: $emailDestination:"){
+                $_SESSION["feedBack"]="Le mail n'est pas parvenu au destinataire";
+             }
+             else if($mail->ErrorInfo =="SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting"){
+                $_SESSION["feedBack"]="Vérifiez votre accès à internet";
+             }
+             else{
+                $_SESSION["feedBack"]=$mail->ErrorInfo;
+             }
              $_SESSION["resentMail"]=$emailDestination;
             header("location:../index.php");
         } else {

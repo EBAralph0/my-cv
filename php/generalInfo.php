@@ -245,7 +245,7 @@ Class Personne
                 <div class="simpleText"><?php echo $pernonne1->getMetier() ?></div>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="coordonate" id="coordonate">
 
         <!-- <div class="contentCircleButton"> data-toggle="modal" data-target="#myModal" -->
