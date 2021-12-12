@@ -239,7 +239,7 @@ Class Personne
             <img src="image/delete_sign_filled_50px.svg" alt="" class="smallIcon" id="smallIcon">
         </div>
         <div class="personnalInfo" id="personnalInfo">
-            <img src='<?php echo $pernonne1->getPhotoProfil() ?>' alt="" class="profilePhoto">
+            <img src="<?php echo $pernonne1->getPhotoProfil() ?>" alt="" class="profilePhoto">
             <div style="margin-left: 20px;">
                 <div class="nom"> <b> <?php echo $pernonne1->getNom(). " " . $pernonne1->getPrenom() ?> </b> </div>
                 <div class="simpleText"><?php echo $pernonne1->getMetier() ?></div>
