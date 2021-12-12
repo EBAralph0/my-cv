@@ -269,7 +269,7 @@ Class Personne
                 <div class="simpleText"><?php echo $pernonne1->getStatutMatrimonial() ?>,
                     <?php
                     if ($pernonne1->getnombreEnfant() < 1) {
-                        echo "Aucun enfant";
+                        echo "Pas d'enfant";
                     } elseif ($pernonne1->getNombreEnfant() == 1) {
                         echo $pernonne1->getNombreEnfant() . " enfant";
                     } else {
