@@ -78,14 +78,14 @@ Class Personne
         $this->photoProfil = $photoProfil;
     }
     public function getPhotoProfil(){
-        return ucfirst($this->photoProfil);
+        return $this->photoProfil;
     }
 
     public function setPhotoCouverture($photoCouverture){
         $this->photoCouverture = $photoCouverture;
     }
     public function getPhotoCouverture(){
-        return ucfirst($this->photoCouverture);
+        return $this->photoCouverture;
     }
 
     public function setMetier($metier){
