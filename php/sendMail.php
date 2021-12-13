@@ -53,7 +53,6 @@ try {
     ob_start();
     require("dataMail.php");
     $myBody = ob_get_contents();
-
     ob_clean();
 
 

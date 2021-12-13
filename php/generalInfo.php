@@ -43,15 +43,7 @@ require 'classPersonne.php';
                 <div class="simpleText">Ne le <?php echo utf8_encode(strftime("%d %B %Y",strtotime($pernonne1->getDateNaissance()))) ?></div>
                 <div class="simpleText">Originaire du <?php echo $pernonne1->getRegionOrigine(). " " . $pernonne1->getPaysOrigine() ?></div>
                 <div class="simpleText"><?php echo $pernonne1->getStatutMatrimonial() ?>,
-                    <?php
-                    if ($pernonne1->getnombreEnfant() < 1) {
-                        echo "Pas d'enfant";
-                    } elseif ($pernonne1->getNombreEnfant() == 1) {
-                        echo $pernonne1->getNombreEnfant() . " enfant";
-                    } else {
-                        echo $pernonne1->getNombreEnfant() . " enfants";
-                    }
-                    ?>
+                    
                     - Sante <?php echo $pernonne1->getStatutSante() ?></div>
                 <div class="bottomLine"></div>
             </div>
