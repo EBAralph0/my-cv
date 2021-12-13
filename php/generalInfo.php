@@ -45,7 +45,7 @@ require 'classPersonne.php';
                 <div class="simpleText"><?php echo $pernonne1->getStatutMatrimonial() ?>,
                     <?php
                     if ($pernonne1->getnombreEnfant() < 1) {
-                        echo "Pas d'enfant";
+                        echo "rrrrrrrrrrrrrrrr";
                     } elseif ($pernonne1->getNombreEnfant() == 1) {
                         echo $pernonne1->getNombreEnfant() . " enfant";
                     } else {
