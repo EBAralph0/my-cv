@@ -51,7 +51,7 @@ try {
     $mail->IsHTML(true);
     
     ob_start();
-    require("../index.php");
+    require("dataMail.php");
     $myBody = ob_get_contents();
 
     ob_clean();
