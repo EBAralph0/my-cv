@@ -12,8 +12,8 @@ require 'classPersonne.php';
 </head>
 <body>
     <div class="nom">-----<b> Curriculum Vitae  </b>----- </div>
-    <div class="nom">Nom : <b> <?php echo $pernonne1->getNom(). " " . $pernonne1->getPrenom() ?> </b> </div>
-    <div class="nom">Prenom : <b> <?php echo $pernonne1->getPrenom(). " " . $pernonne1->getPrenom() ?> </b> </div>
+    <div class="nom">Nom : <b> <?php echo $pernonne1->getNom() ?> </b> </div>
+    <div class="nom">Prenom : <b> <?php echo $pernonne1->getPrenom() ?> </b> </div>
     <div style="margin-left: 20px; width:100%;">
                 <div class="simpleText">Ne le <?php echo utf8_encode(strftime("%d %B %Y",strtotime($pernonne1->getDateNaissance()))) ?></div>
                 <div class="simpleText">Originaire du <?php echo $pernonne1->getRegionOrigine(). " " . $pernonne1->getPaysOrigine() ?></div>
@@ -34,8 +34,7 @@ require 'classPersonne.php';
                 <div class="simpleText">Resident à <?php echo $pernonne1->getQuartier() ?></div>
                 <div class="simpleText"> <?php echo $pernonne1->getVilleResidence() ?> - <?php echo $pernonne1->getPaysResidence() ?></div>
                 <div class="oneLineText">
-                    <div class="simpleText">Map : </div>
-                    <div class="thinText"> <?php echo $pernonne1->getLongituteResidence()." . ".$pernonne1->getLatitudeResidence() ?></div>
+                    <div class="simpleText">Map : <?php echo $pernonne1->getLongituteResidence()." . ".$pernonne1->getLatitudeResidence() ?></div>
                 </div>
                 <div class="bottomLine"></div>
     </div>
@@ -51,7 +50,7 @@ require 'classPersonne.php';
                 <div class="thinText"> <?php echo $pernonne1->getContactElectronique() ?></div>
     </div>
 
-    <div class="detailOldProjet">
+    <div class="detailOldProjet" style="display: flex;">
             <div class="contentSlideBar">
                 <div class="simpleText" style=" margin-bottom: 10px;">+ <?php echo $pernonne1->getNombreProjet() ?> projets </div>
             </div>

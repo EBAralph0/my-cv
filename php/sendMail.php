@@ -67,7 +67,7 @@ try {
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
     // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-
+    $mail->AddEmbeddedImage('image/photo_2021-11-22_21-35-24.jpg','testImage');
     
 
     $mail->MsgHTML($myBody); 

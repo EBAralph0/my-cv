@@ -314,6 +314,21 @@
         transition-duration: 0.5s;
     }
     
+    .smallCircleButtonTree {
+        background-color: #eef3ff;
+        border-style: none;
+        border-radius: 100%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
+        top: -7.5%;
+        right: 7.5%;
+        transition-duration: 0.5s;
+    }
+    
     .activeSmallCircleButtonOne {
         background-color: #eef3ff;
         border-style: none;
@@ -330,6 +345,10 @@
         transform: translateX(-300%) rotate(-360deg);
     }
     
+    .activeSmallCircleButtonOne:hover {
+        background-color: #E34756;
+    }
+    
     .activeSmallCircleButtonTwo {
         background-color: #eef3ff;
         border-style: none;
@@ -344,6 +363,30 @@
         right: 7.5%;
         transition-duration: 0.5s;
         transform: translateX(-150%) rotate(-360deg);
+    }
+    
+    .activeSmallCircleButtonTwo:hover {
+        background-color: #E34756;
+    }
+    
+    .activeSmallCircleButtonTree {
+        background-color: #eef3ff;
+        border-style: none;
+        border-radius: 100%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(28, 28, 29, 0.767);
+        top: -7.5%;
+        right: 7.5%;
+        transition-duration: 0.5s;
+        transform: translateX(-450%) rotate(-360deg);
+    }
+    
+    .activeSmallCircleButtonTree:hover {
+        background-color: #E34756;
     }
     
     .loadingImage {

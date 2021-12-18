@@ -1,5 +1,4 @@
 <?php
-
 setlocale(LC_TIME, 'fr_FR');
 date_default_timezone_set('Europe/Paris');
 require 'classPersonne.php';
@@ -25,11 +24,19 @@ require 'classPersonne.php';
     <div class="coordonate" id="coordonate">
 
         <!-- <div class="contentCircleButton"> data-toggle="modal" data-target="#myModal" -->
+        <div class="smallCircleButtonTree" id="smallCircleButtonTree" data-toggle="modal" data-target="#">
+            <form action="php/loginController.php" method="post" style="width: inherit; height:inherit;">
+                <button style="width: inherit; height:inherit;border:none;border-radius:50%;background-color:inherit;">
+                <img src="image/edit_user_male_24px.png" alt="" srcset="" class="sentedIcon" id="sentedIcon3"></button>
+            </form>
+        </div>
         <div class="smallCircleButtonOne" id="smallCircleButtonOne" data-toggle="modal" data-target="#myPdfModal">
+                <button style="width: inherit; height:inherit;border:none;border-radius:50%;background-color:inherit;">
                 <img src="image/pdf_2_48px.png" alt="" srcset="" class="sentedIcon" id="sentedIcon1" >
         </div>
         <div class="smallCircleButtonTwo" id="smallCircleButtonTwo"  data-toggle="modal" data-target="#myModal">
-            <img src="image/gmail_48px.svg" alt="" srcset="" class="sentedIcon" id="sentedIcon2">
+                <button style="width: inherit; height:inherit;border:none;border-radius:50%;background-color:inherit;">
+                <img src="image/gmail_48px.svg" alt="" srcset="" class="sentedIcon" id="sentedIcon2">
         </div>
         <div class="circleButton" id="circleButton" onclick="myScript()">
             <img src="image/sent_filled_50px.png" alt="" class="sentIcon" id="sentIcon">
@@ -152,15 +159,9 @@ require 'classPersonne.php';
                             <i class="fas exclamation-triangle appearImage " style="color: tomato;"></i>
                             </div>
                         </div>
-                        <!-- <div class="form-group"> -->
-                            <!-- <label for="recipient-name" class="col-form-label">Email</label> -->
-                            <!-- <input type="text" class="form-control" id="receptionEmail" name="receptionEmail" style="width: 94%;" placeholder="exemple@gmail.com..." required> -->
-
                             <div class="modal-footer" style="display:flex; justify-content:flex-end;">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="cancelButton();">OK</button>
-                                <!-- <button type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button> -->
                             </div>
-                        <!-- </div> -->
                     </form>
             </div>
             </div>
@@ -243,6 +244,108 @@ require 'classPersonne.php';
 </div>
 
 
+<!-- YOU NEED TO CONNECT -->
+<div class="modal fade" id="connexionEditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Connectez - vous :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cancelButton();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div style="display: flex;justify-content:center;" >
+                        <div style="display: flex;flex-flow:column;align-items:center;">  
+                        <i class="fas fa-spinner loadingImage" id="loadingIcon1"></i>
+                        </div>
+                </div>
+                <form method="post" action="php/loginController.php">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Identifiant</label>
+                        <input type="text" class="form-control" id="login" name="login" style="width: 94%;" placeholder="votre identifiant" required>
+
+                        <label for="recipient-name" class="col-form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" style="width: 94%;" placeholder="votre mot de passe" required>
+
+                        <div class="modal-footer" style="display:flex; justify-content:space-between;">
+                            <button type="reset" class="btn btn-secondary" data-dismiss="modal" onclick="cancelButton();">Annuler</button>
+                            <button onclick="sendButton();" type="submit" name="sendEmailButton" class="btn btn-primary" >Envoyer</button>
+                        </div>
+                       
+                    </div>
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- BAD TRIARD -->
+<div class="modal fade" id="reConnexionEditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tentative échouée :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cancelButton();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div style="display: flex;justify-content:center;" >
+                    <div style="display: flex;flex-flow:column;align-items:center;">  
+                    <i class="fas fa-exclamation-triangle appearImage" id ="errorImage" style="color: tomato;"></i>
+                    </div>
+                </div>
+                <form method="post" action="php/loginController.php">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Identifiant</label>
+                        <input type="text" value="<?php echo $_SESSION["login"]?>" class="form-control" id="login" name="login" style="width: 94%;" placeholder="votre identifiant" required>
+
+                        <label for="recipient-name" class="col-form-label">Mot de passe</label>
+                        <input type="password" value="<?php echo $_SESSION["password"]?>" class="form-control" id="password" name="password" style="width: 94%;" placeholder="votre mot de passe" required>
+
+                        <div class="modal-footer" style="display:flex; justify-content:space-between;">
+                            <button type="reset" class="btn btn-secondary" data-dismiss="modal" onclick="cancelButton();">Annuler</button>
+                            <button onclick="sendButton();" type="submit" name="sendEmailButton" class="btn btn-primary" >Renvoyer</button>
+                        </div>
+                       
+                    </div>
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+<?php 
+if(isset($_SESSION["connected"])){
+    if($_SESSION["connected"]== false){
+
+    echo '<script>
+            $(document).ready(function(){
+                $("#connexionEditModal").modal("show");
+            });
+        </script>';
+    unset($_SESSION["connected"]);
+    unset($_SESSION["login"]);
+    unset($_SESSION["password"]);
+    }
+}
+if(isset($_SESSION["tentative"])){
+    if($_SESSION["tentative"]== false){
+
+    echo '<script>
+            $(document).ready(function(){
+                $("#reConnexionEditModal").modal("show");
+            });
+        </script>';
+    unset($_SESSION["tentative"]);
+    unset($_SESSION["login"]);
+    unset($_SESSION["password"]);
+    }
+}
+?>
+
 <?php 
     if(isset($_SESSION["sentedMail"])){
         if($_SESSION["sentedMail"]== true){
@@ -275,8 +378,10 @@ require 'classPersonne.php';
             document.getElementById('deleteIcon').className = 'activeImage';
             document.getElementById('smallCircleButtonOne').className ='activeSmallCircleButtonOne';
             document.getElementById('smallCircleButtonTwo').className ='activeSmallCircleButtonTwo';
+            document.getElementById('smallCircleButtonTree').className ='activeSmallCircleButtonTree';
             document.getElementById('sentedIcon1').className ='sentIcon';
             document.getElementById('sentedIcon2').className ='sentIcon';
+            document.getElementById('sentedIcon3').className ='sentIcon';
         }
         else{
             document.getElementById('circleButton').className='circleButton';
@@ -284,8 +389,10 @@ require 'classPersonne.php';
             document.getElementById('deleteIcon').className= 'unactiveImage';
             document.getElementById('smallCircleButtonOne').className ='smallCircleButtonOne';
             document.getElementById('smallCircleButtonTwo').className ='smallCircleButtonTwo';
+            document.getElementById('smallCircleButtonTree').className ='smallCircleButtonTree';
             document.getElementById('sentedIcon1').className ='sentedIcon';
             document.getElementById('sentedIcon2').className ='sentedIcon';
+            document.getElementById('sentedIcon3').className ='sentedIcon';
         }
     }
     function sendButton(){
@@ -307,6 +414,16 @@ require 'classPersonne.php';
         }
         if(document.getElementById('failedModal').className='modal fade show'){
             $("#failedModal").modal("hide");
+            // document.body.style="overflow:none";
+
+        }
+        if(document.getElementById('connexionEditModal').className='modal fade show'){
+            $("#connexionEditModal").modal("hide");
+            // document.body.style="overflow:none";
+
+        }
+        if(document.getElementById('reConnexionEditModal').className='modal fade show'){
+            $("#reConnexionEditModal").modal("hide");
             // document.body.style="overflow:none";
 
         }

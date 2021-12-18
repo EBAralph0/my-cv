@@ -1,73 +1,7 @@
 <?php
-
-use JetBrains\PhpStorm\Language;
-
-class Loisir{
-
-    // public Personne $personne;
-    //public $personne;
-    public $imageLoisir;
-
-   
-
-    public function __construct($imageLoisir)
-    {
-         $this->imageLoisir=$imageLoisir;
-    }
-
-   
-
-    public function getLoisir(){
-        echo '
-        <img src="'.$this->imageLoisir.'" alt=" " class="pleasureImage ">
-        ';
-    }
-
-}
-
-class Langue{
-
-    // public Personne $personne;
-    //public $personne;
-    public $nomLangue;
-
-   
-
-    public function __construct($nomLangue)
-    {
-         $this->nomLangue=$nomLangue;
-    }
-
-   
-
-    public function getLangues(){
-        echo '
-            <div class="checkLanguage ">
-                <img src="image/checked_checkbox_24px.png " alt=" ">
-                <div class="bigGreyText ">'.$this->nomLangue.'</div>
-            </div>
-            ';
-    }
-
-}
-
-    $imagesLoisir=[
-        new Loisir('image/tango_48px.png'),
-        new Loisir('image/tv_show_100px.png'),
-        new Loisir('image/football2_64px.png'),
-        new Loisir('image/nintendo_switch_48px.png'),
-        new Loisir('image/nintendo_gamecube__100px.png'),
-        new Loisir('image/tango_48px.png'),
-        new Loisir('image/tv_show_100px.png'),
-        new Loisir('image/football2_64px.png'),
-        new Loisir('image/nintendo_switch_48px.png'),
-        new Loisir('image/nintendo_gamecube__100px.png')
-    ];
+include 'classLoisir.php';
+include 'classLangue.php';
     
-    $langues=[
-        new Langue('Français'),
-        new Langue('Anglais')
-    ];
 ?>
  <div class="doubleDiv " id="doubleDiv ">
     <div class="interestPoint " id="interestPoint ">
